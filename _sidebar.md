@@ -5,3 +5,5 @@
 - [DoublyLinkedList](/ds_algos/03_DoublyLinkedList.md)
 - [Stack](/ds_algos/04_Stack.md)
 - [Queue](/ds_algos/05_Queue.md)
+- [Basic Sorting](/ds_algos/06_BasicSorting.md)
+- [Advanced Sorting](/ds_algos/07_AdvancedSorting.md)
