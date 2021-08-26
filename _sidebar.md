@@ -7,3 +7,4 @@
 - [Queue](/ds_algos/05_Queue.md)
 - [Basic Sorting](/ds_algos/06_BasicSorting.md)
 - [Advanced Sorting](/ds_algos/07_AdvancedSorting.md)
+- [Dynamic Programming](/ds_algos/08_Dynamic_Programming.md)
