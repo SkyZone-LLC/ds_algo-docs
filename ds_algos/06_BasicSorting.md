@@ -10,6 +10,11 @@ Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping 
 
 ### Code
 
+- Start looping from with a variable called i the end of the array towards the beginning
+- Start an inner loop with a variable called j from the beginning until i - 1
+- if array[i] is greater than array[j+1], swap those two values.
+-  Return sorted array.
+
 ```javascript
 function bubbleSort(array) {
     for(let i = array.length - 1; i > 0; i--) {
@@ -39,6 +44,12 @@ In every iteration of selection sort, the minimum element (considering ascending
 ![demo for selection sort](../_media/selectionsort.gif)
 
 ### Code
+
+- Store the first element as the smallest value you've seen so far.
+- Compare this item to the next in the array until you find a smaller number.
+- If a smaller number if found, designate that smaller number to be the new "minimum" and continue until the end of the array.
+- if the "minimum" is not the value(index) you initially began with, swap the two values.
+- Repeat this with the next element until the array is sorted.
 
 ```javascript
 function selectionSort(array) {
@@ -70,6 +81,11 @@ Insertion sort is a simple sorting algorithm that works similar to the way you s
 ![demo for insertion sort](../_media/insertionsort.gif)
 
 ### Code
+
+- Start by picking the second element in the array
+- Now compare the second element witht the one before it and swap if necessary.
+- Continue to the next element and if it is in the incorrect order, iterate through the sorted portion (i.e. left side) to place the element in the correct place.
+- Repeat until the array is sorted.
 
 ```javascript
 function insertionSort(array) {
