@@ -52,7 +52,7 @@ function fib(n){
 ```
 
 ### Big O
-- Without using DP but only recursion time comlexity: **T(n) = T(n-1) + T(n-2) + 1 = 2n = O(2n)**
+- Without using DP but only recursion time comlexity: **T(n) = T(n-1) + T(n-2) + 1 = 2^n = O(2^n)**
 - With DP: Memoized Solution: **O(n) time | O(n) space**
 - [Reference](https://algorithms.tutorialhorizon.com/introduction-to-dynamic-programming-fibonacci-series/)
 
