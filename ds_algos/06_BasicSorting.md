@@ -1,5 +1,7 @@
 # BASIC SORTING
 
+## BigO
+- Check each sorting algorithm performance: https://www.bigocheatsheet.com/
 
 ## Bubble Sort
 
@@ -8,12 +10,16 @@ Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping 
 ### Demo
 ![demo for bubble sort](../_media/bubblesort.gif)
 
+### Visualize
+- [Bubble Sort Visualizer](https://algorithm-visualizer.org/brute-force/bubble-sort)
+
 ### Code
 
 - Start looping from with a variable called i the end of the array towards the beginning
 - Start an inner loop with a variable called j from the beginning until i - 1
 - if array[i] is greater than array[j+1], swap those two values.
 -  Return sorted array.
+
 
 ```javascript
 function bubbleSort(array) {
@@ -29,6 +35,19 @@ function bubbleSort(array) {
     return array;
 }
  
+// Alternative
+function bubbleSort(array) {
+    for(let i = 0; i > array.length; i++) {
+        for(let j = 1; j < array.length; j++) {
+            if(array[j] < array[j-1]) {
+                let temp = array[j]
+                array[j] = array[j-1]
+                array[j-1] = temp        
+           }
+        }
+    }
+    return array;
+}
 bubbleSort([4,2,6,5,1,3])
 ```
 
@@ -42,6 +61,9 @@ In every iteration of selection sort, the minimum element (considering ascending
 ### Demo
 
 ![demo for selection sort](../_media/selectionsort.gif)
+
+### Visualize
+- [Selection Sort Visualizer](https://algorithm-visualizer.org/brute-force/selection-sort)
 
 ### Code
 
@@ -69,6 +91,19 @@ function selectionSort(array) {
     return array
 }
 
+// Alternative
+function selectionSort(array) {
+    for(let i = 1; i < array.length; i++) {
+        let cur = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] > cur) {
+            array[j+1] = array[j]
+            j--;
+        } 
+        array[j+1] = cur;
+    }
+    return array
+}
 selectionSort([4,2,6,5,1,3])
 ```
 
@@ -80,6 +115,8 @@ Insertion sort is a simple sorting algorithm that works similar to the way you s
 
 ![demo for insertion sort](../_media/insertionsort.gif)
 
+### Visualize
+- [Insertion Sort Visualizer](https://algorithm-visualizer.org/brute-force/insertion-sort)
 ### Code
 
 - Start by picking the second element in the array
@@ -100,6 +137,18 @@ function insertionSort(array) {
    return array
 }
 
+// Alternative
+function insertionSort(array) {
+    for(let i = 1; i < array.length; i++) {
+        let cur = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] > cur) {
+            array[j+1] = array[j]
+        }
+        array[j+1] = cur;
+   }
+   return array
+}
 insertionSort([4,2,6,5,1,3]);
 ```
 

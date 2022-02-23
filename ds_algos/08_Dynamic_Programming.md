@@ -59,3 +59,6 @@ function fib(n){
 
 ### Problem Set
 - [Basic Problems](https://www.geeksforgeeks.org/dynamic-programming/#basicProblems)
+
+### Extra VideoExplanation
+- [CS Dojo](https://www.youtube.com/watch?v=vYquumk4nWw&ab_channel=CSDojo)
