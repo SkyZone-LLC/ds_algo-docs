@@ -59,6 +59,7 @@ function fib(n){
 
 ### Problem Set
 - [Basic Problems](https://www.geeksforgeeks.org/dynamic-programming/#basicProblems)
+- [Leetcode - Climbing Stairs](https://www.youtube.com/watch?v=Y0lT9Fck7qI&ab_channel=NeetCode)
 
-### Extra VideoExplanation
+### Extra Video Explanation
 - [CS Dojo](https://www.youtube.com/watch?v=vYquumk4nWw&ab_channel=CSDojo)
